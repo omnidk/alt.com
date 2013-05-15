@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+ <fieldset>
+ 
+	 <field name="id"
+	  type="hidden"
+	 />
+	
+	<field name="user_id"
+	 type="hidden"
+	 />
+	 
+	 <field name="listing_title"
+	  label="Listing Title"
+	  type="text"
+	  description="Enter Listing Title"
+	  class="inputtext"
+	  default=""
+	  size="20"
+	  />
+	  
+	  <field
+			name="description"
+			type="editor"
+			label="Description"
+			description=""
+			 size="40"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			
+		 />
+		
+	  
+	  
+	  
+	  <field name="homeurl"
+	  label="Website Address"
+	  class="inputtext"
+	  default=""
+	  description="Enter website address"
+	  size="20"
+	  />
+
+	  <field name="category_id"
+	  label="Category"
+	  type="sql"
+	  query="select id, category from #__barter_category where published=1"
+	  value_field="category"
+	  default="0"
+	  select="selected"
+	  description=""
+	  >
+	  <option value="0">--select--</option>
+	  </field>
+	  
+	  <field name="paystring"
+	  label="Payment Type Accepted"
+	  class="inputtext"
+	  default=""
+	  description="Enter payment type"
+	  size="20"
+	  />
+	  
+	  <field name="sell_price"
+	  label="Sell Price"
+	  class="inputtext"
+	  default=""
+	  description="Enter sell price"
+	  size="20"
+	  />
+	  
+	  <field name="shipping_cost"
+	  label="Shipping Cost"
+	  class="inputtext"
+	  default=""
+	  description="Enter shipping cost"
+	  size="20"
+	  />
+	  
+	  <field name="quantity"
+	  label="Quantity"
+	  class="inputtext"
+	  default=""
+	  description="Enter shipping cost"
+	  size="20"
+	  />
+	  
+	   <field name="wishlist"
+	  label="Wishlist"
+	  class="inputtext"
+	  default=""
+	  description="Enter Wishlist"
+	  size="20"
+	  />
+	  
+	  <field
+	  name="persistent"
+	  type="checkbox"
+	  value="1"
+	  label="Persistent"
+	  description="Make this a Persistent Listing "/>	  
+	  
+ </fieldset>
+</form>

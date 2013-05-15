@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form enctype="multipart/form-data">
+   
+	    <fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="parent_id"
+			type="hidden"
+		/>
+		
+		<!--<field name="parent_id" type="sql" label="Parent Category"  description="Please Select Coupon Category" query="SELECT id AS value, category AS category FROM #__barter_category  where parent_id=0"/>-->
+	
+		<field
+			name="category"
+			type="text"
+			label="Category Name"
+			description="Plese Enter category name"
+			size="20"
+			class="inputbox validate"
+			default=""
+			
+			
+		/>
+		
+		<field name="published" type="radio" default="" label="Publish" description="select the Published">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+        </field>
+		</fieldset>
+</form>

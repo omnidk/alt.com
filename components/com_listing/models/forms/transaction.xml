@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+        <fieldset>
+                <field name="id" type="hidden"/>
+               <field name="sender_id" type="sql" query="select id, name from #__users" key_field="id" value_field="name" default="" label="Sender name" description="Please Type Sender name" select="selected" size="5">
+			<option value="0">Select</option>
+			</field>
+			<field name="receiver_id" type="sql" query="select id, username from #__users" key_field="id" value_field="username" default="" label="Reciever name" description="Please Type Sender name" select="selected" size="5">
+			<option value="0">Select</option>
+			</field>
+               <!-- <field name="sender_id" type="text" label="Sender name" description="Please Type Sender name" />-->
+				<!--<field name="receiver_id" type="text" label="Reciever name" description="Reciever name" />  -->
+			     
+				<field name="amount" type="text" label="Total amount" description="Please Type Total amount" />
+				<field name="from_total_balance" type="text" label="From total balance" description="Please Type balance"/>
+				<field name="from_line_of_credit" type="text" label="From Line of Credit" description="Please Type Expiration Date"/>
+				<field name="created_date" type="calendar" label="created date" description="Please Type Price" format="%Y-%m-%d" />
+				<field name="published" type="radio" default="" label="Published" description="Published/Unpublished">
+                        <option value="1">Yes</option>
+                        <option value="0">No </option>
+                </field>
+               
+				
+        </fieldset>
+</form>

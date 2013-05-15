@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+        <fieldset>
+                <field name="id" type="hidden"/>               
+                <field name="listing_title" type="text" label="Listing Title" description="Please Type Title" />
+				<field name="description" type="editor" label="description" description=""  size="40" filter="safehtml" buttons="true" hide="readmore,pagebreak"
+			     />
+				<field name="homeurl" type="text" label="homeurl" description="Please Type Coupon Title" />
+				<field name="start_date" type="calendar" label="Start Date" description="Please Type Start Date" format="%Y-%m-%d"/>
+				<field name="end_date" type="calendar" label="Expiration Date" description="Please Type Expiration Date" format="%Y-%m-%d"/>
+				<field name="paystring" type="text" label="pay string" description="Please Type Payment Types" />
+				<field name="sell_price" type="text" label="sell price" description="Please Type Price" />
+				<field name="shipping_cost" type="text" label="shipping cost" description="Please Type Description"/>
+				<field name="quantity" type="text" label="quantity" description="Please Type Quantity"/>
+				<field name="published" type="radio" default="" label="Published" description="Published/Unpublished">
+                        <option value="1">Yes</option>
+                        <option value="0">No </option>
+                </field>				
+        </fieldset>
+</form>
